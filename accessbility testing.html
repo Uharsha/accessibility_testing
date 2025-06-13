@@ -1,0 +1,70 @@
+<!doc type HTML>
+<html>
+<head>
+<title>accessibility testing</title>
+
+</head>
+<body>
+<h1>1.	Detailed Explanation of "Perceivable" in Web Accessibility</h1>
+<p>The principle of Perceivable is the first guideline of the Web Content Accessibility Guidelines (WCAG) and ensures that all users can perceive the content of a website or application. This principle focuses on making information and user interface components available to the senses of sight, sound, and touch.
+<b>Core Components of Perceivable</b>
+1.	Text Alternatives (Guideline 1.1)<br>
+o	Provide text alternatives for any non-text content (e.g., images, charts, audio).<br>
+o	Text alternatives ensure that assistive technologies like screen readers can convey the information to visually impaired users.<br>
+Examples:<br>
+o	Good Practice: Adding alt text for an image, such as <img src="dog.jpg" alt="Golden retriever playing in a park">.<br>
+o	Bad  Practice: Using <img src="chart.png" alt=""> without describing the chart.<br>
+2.	Time-Based Media (Guideline 1.2)<br>
+o	Provide alternatives for audio and video content, such as captions, transcripts, and audio descriptions.<br>
+o	This ensures content is accessible to people who are deaf, hard of hearing, blind, or visually impaired.<br>
+Examples:<br>
+o	Good Practice: Including captions for a YouTube video explaining a product.<br>
+o	Bad Practice: Releasing a podcast without a transcript.<br>
+3.	Adaptable Content (Guideline 1.3)<br>
+o	Create content that can be presented in different ways without losing meaning.<br>
+o	Use semantic HTML to define headings, lists, and tables to ensure assistive technologies can interpret the content structure correctly.<br>
+Examples:<br>
+o	Good Practice: Using tags for headings and  for lists.<br>
+o	Bad Practice: Using bold text for headings without actual <h> tags.<br>
+4.	Distinguishable (Guideline 1.4)<br>
+o	Make content easy to see and hear, including foreground and background contrast, text size, and audio control.<br>
+Examples:<br>
+o	Good Practice: Ensuring a minimum color contrast ratio of 4.5:1 between text and background colors.<br>
+o	Bad Practice: Using light gray text on a white background.<br>
+<hr>
+<h2>Practical Examples of Perceivable in Action</h2><br>
+1.	Images and Graphics:<br>
+o	Scenario: An e-commerce site with product images. <br>
+	Perceivable: Include descriptive alt text like "Black leather boots with a 2-inch heel."<br>
+	Not Perceivable: Using alt text like "image123.jpg" or leaving it empty.<br>
+2.	Videos:<br>
+o	Scenario: A company training video. <br>
+	Perceivable: Adding captions for dialogue and sound effects and providing a text transcript.<br>
+	Not Perceivable: Relying solely on the video’s visuals and audio without alternatives.<br>
+3.	Forms:<br>
+o	Scenario: A job application form. <br>
+	Perceivable: Labeling form fields explicitly with <label> tags, like <label for="email">Email Address</label>.<br>
+	Not Perceivable: Using placeholder text as the only indicator of the field's purpose.<br>
+4.	Audio:<br>
+o	Scenario: Background music on a website. <br>
+	Perceivable: Allowing users to control or mute the audio.<br>
+	Not Perceivable: Automatically playing loud music without a pause or mute button.<br>
+<hr>
+<h3>Tools and Techniques to Ensure Operability</h3><br>
+1.	Testing for Keyboard Accessibility:<br>
+o	Use the Tab key to navigate your site and confirm all interactive elements are reachable and operable.<br>
+o	Ensure the focus order is logical and matches the visual layout.<br>
+2.	Time Limit Adjustments:<br>
+o	Provide user settings to extend or remove time constraints.<br>
+o	Test for scenarios where users may need additional time, like filling forms.<br>
+3.	Seizure Risk Testing:<br>
+o	Use tools like the Trace Center's Photosensitive Epilepsy Analysis Tool (PEAT) to check for flashing content.<br>
+4.	Screen Reader Navigation:<br>
+o	Test your site with popular screen readers (NVDA, JAWS, VoiceOver) to ensure it is navigable with assistive technology.<br>
+5.	Mobile Responsiveness:<br>
+o	Check touch targets and input interactions on various devices and screen sizes.<br>
+</p>
+</body>
+</html>
+
+
