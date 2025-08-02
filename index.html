@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <script src="js/script.js" defer></script>
+<title>Welcome to the Home Page of A11Y Insights</title>
+
+</head>
+
+<body>
+
+ <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="banner">
+
+    <img src="photos/banner.jpg" alt="A11Y Insights: Your Source for Learning, Testing, and Creating Accessible Content">
+
+  </div>
+<nav>
+  <ul>
+    <li class="main-menu-item home-link">
+      <a href="index.html" title="Navigate to the Home Page">Home</a>
+    </li>
+    <li class="main-menu-item" aria-haspopup="true" aria-expanded="false">
+      <a href="overview.html" title="Explore Web Accessibility Overview">Overview</a>
+      <ul class="submenu">
+        <li class="submenu-item"><a href="introduction.html" title="Learn the Basics of Web Accessibility">Introduction</a></li>
+        <li class="submenu-item"><a href="principle.html" title="Understand Accessibility Principles">Principle</a></li>
+        <li class="submenu-item"><a href="guideline.html" title="Explore Web Accessibility Guidelines">Guideline</a></li>
+        <li class="submenu-item"><a href="criteria.html" title="Discover Rules for Accessible Websites">Criteria</a></li>
+      </ul>
+    </li>
+    <li class="main-menu-item" aria-haspopup="true" aria-expanded="false">
+      <a href="tools.html" title="Discover Accessibility Tools">Tools</a>
+      <ul class="submenu">
+        <li class="submenu-item"><a href="extension.html" title="Enhance Accessibility with Browser Extension">Extension</a></li>
+        <li class="submenu-item"><a href="bug-report.html" title="Report Accessibility Bugs">Bug Report</a></li>
+        <li class="submenu-item"><a href="search.html" title="Search by Criteria: Headings, Links, Dropdowns, Lists">Search</a></li>
+      </ul>
+    </li>
+    <li class="main-menu-item" aria-haspopup="true" aria-expanded="false">
+      <a href="services.html" title="Explore Accessibility Services">Services</a>
+      <ul class="submenu">
+        <li class="submenu-item"><a href="case_study.html" title="Learn from Accessibility Case Studies">Case Study</a></li>
+        <li class="submenu-item"><a href="quiz.html" title="Test Your Accessibility Knowledge with a Quiz">Quiz</a></li>
+        <li class="submenu-item"><a href="audit.html" title="Submit an Accessibility Audit Request">Audit Request</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ <main id="main-content">
+<header>
+    <h1>Welcome to a11y Insight</h1>
+    <p>Your Ultimate Web Accessibility Tester</p>
+</header>
+
+<section id="carousel" role="region" aria-label="Image Carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" role="option" aria-selected="true">
+                <img src="photos/1.jpg" class="d-block w-100" alt="Introduction to A11Y Insights" aria-describedby="imageDesc1">
+            </div>
+            <div class="carousel-item" role="option" aria-selected="false">
+                <img src="photos/2.jpg" class="d-block w-100" alt="Educational Focus of A11Y Insights" aria-describedby="imageDesc2">
+            </div>
+            <div class="carousel-item" role="option" aria-selected="false">
+                <img src="photos/3.jpg" class="d-block w-100" alt="Origins at TTI Pune" aria-describedby="imageDesc3">
+            </div>
+            <div class="carousel-item" role="option" aria-selected="false">
+                <img src="photos/4.jpg" class="d-block w-100" alt="Creators Unveiled - Siddharth Kalantri" aria-describedby="imageDesc4">
+            </div>
+            <div class="carousel-item" role="option" aria-selected="false">
+                <img src="photos/5.jpg" class="d-block w-100" alt="Creators Unveiled - Ratinath Tripathi" aria-describedby="imageDesc5">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div id="imageDesc1" class="sr-only">
+        <h2>Introduction to A11Y Insights</h2>
+        <p>Welcome to A11Y Insights: Navigating Web Accessibility</p>
+        <p>A11Y Insights stands as a comprehensive resource hub for accessibility testing. Join us as we delve into the world of web accessibility testing, offering up-to-date content and insights to ensure inclusive digital experiences.</p>
+    </div>
+    <div id="imageDesc2" class="sr-only">
+        <h2>Educational Focus of A11Y Insights</h2>
+        <p>Empowering Through Education: A11Y Insights' Mission</p>
+        <p>Embark on a journey of awareness and understanding with A11Y Insights, an educational website project. Focused on promoting web accessibility, particularly the WCAG (Web Content Accessibility Guidelines), our goal is to provide valuable insights for students and digital creators. Witness the evolution of this project as we strive to create a more inclusive digital landscape.</p>
+    </div>
+    <div id="imageDesc3" class="sr-only">
+        <h2>Origins at TTI Pune</h2>
+        <p>Roots at TTI Pune: A11Y Insights' Inception</p>
+        <p>A11Y Insights was conceived by Siddharth and Ratinath during their time at the Technical Training Institute of PBMA (TTI) Pune. Through the institute's accessibility course, they dedicated themselves to promoting web accessibility. Now, A11Y Insights continues to provide valuable insights to testers and developers.</p>
+    </div>
+    <div id="imageDesc4" class="sr-only">
+        <h2>Creators Unveiled - Siddharth Kalantri</h2>
+        <p>Unveiling Siddharth Kalantri</p>
+        <p>Meet Siddharth Kalantri, the visionary mind behind A11Y Insights:</p>
+        <ul>
+            <li>A Science Graduate with a unique vision</li>
+            <li>Overcoming blindness, he adds a distinctive perspective</li>
+            <li>Resides in Bhiwandi, near the vibrant city of Mumbai, Maharashtra</li>
+        </ul>
+        <p>Explore the inspiring journey of Siddharth, who has woven his narrative into the fabric of our website.</p>
+    </div>
+    <div id="imageDesc5" class="sr-only">
+    <h2>Creators Unveiled - Ratinath Tripathi</h2>
+    <p>Unveiling Ratinath Tripathi</p>
+    <p>Meet Ratinath Tripathi, shaping our digital narrative at A11Y Insights:</p>
+    <ul>
+        <li>A Law Graduate with a passion for accessibility</li>
+        <li>Navigating challenges with resilience</li>
+        <li>Calls the spiritual city of Varanasi, Uttar Pradesh, home</li>
+    </ul>
+    <p>Explore the inspiring journey of Ratinath, a key contributor to the A11Y Insights vision.</p>
+</div>
+</section>
+
+<section id="overview">
+    <h2>Overview</h2>
+    <p>
+        Welcome to a11y Insight, your go-to platform for comprehensive web accessibility testing. Our mission is to guide you through the principles, guidelines, and criteria of creating an accessible digital environment.
+    </p>
+</section>
+
+<section id="tools">
+    <h2>Tools</h2>
+    <ul>
+        <li><strong>Extension:</strong> Our browser extension makes on-the-go accessibility testing seamless.</li>
+        <li><strong>Bug Report:</strong> Report and track accessibility bugs with ease.</li>
+        <li><strong>Search:</strong> Utilize our search tool to identify and address potential accessibility issues.</li>
+    </ul>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <ul>
+        <li><strong>Case Study:</strong> Explore our detailed case studies on successful accessibility implementations.</li>
+        <li><strong>Quiz:</strong> Test your knowledge with our interactive accessibility quiz.</li>
+        <li><strong>Audit Report:</strong> Request a comprehensive accessibility audit report for your website.</li>
+        
+    </ul>
+</section>
+</main>
+<footer>
+    <p>For any accessibility-related inquiries, please check our <a href="Accessibility-Statement.html">Accessibility Statement</a>.</p>
+    <p>By using this site, you agree to our <a href="Terms-and-Conditions.html">Terms and Conditions</a>.</p>
+    <p>&copy; 2023 A11Y Insights. All rights reserved.</p>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
