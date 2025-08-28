@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <style>
+        body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* Dark overlay */
+    z-index: -1;
+}
+
+        body{
+            background-image: url('https://img.freepik.com/free-photo/bright-petals-gift-love-bouquet-generated-by-ai_188544-13370.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #time{
+            text-align: center;
+            margin-top: 16%;
+            font-size: 75px;
+            color: cyan;
+            text-shadow: 3px 3px 10px darkblue;
+            margin-bottom: 0%;
+            margin-left: 5%;
+        }
+        #day{
+            text-align: center;
+            font-style: italic;
+            font-size: 80px;
+            color: orange;
+            text-shadow: 3px 3px 10px black;
+            margin: 0%;
+            margin-left: 7%;
+            
+        }
+        #date{
+            text-align: center;
+            font-size: 80px;
+            font-style: italic;
+            text-shadow: 3px 3px 10px darkgreen;
+            color: lime;
+            margin: 0%;
+            margin-left: 7%;
+        }
+    </style>
+
+</head>
+<body>
+  <h1 id="time">00:00:00</h1>
+  <h2 id="day">day</h2>
+  <h2 id="date">date</h2>
+ 
+  <script>
+    function showClock(){
+        const date= new Date();
+        let hours=date.getHours();
+        let minutes=date.getMinutes();
+        let seconds=date.getSeconds();
+        let dates =date.getDate();
+        let month=date.getMonth()+1;
+        let year=date.getFullYear();
+
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        if (dates < 10) dates= "0" + dates;
+        if (month < 10) month = "0" + month;
+        document.getElementById("time"). innerHTML= hours + ":" + minutes +":" +  seconds ;
+        let day = ["Sunday", "Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday"]
+        document.getElementById("day"). innerHTML=day[date.getDay()];
+        let dat=document.getElementById("date").innerHTML= dates + "/" + month +"/" + year;
+    }
+    setInterval(showClock, 1000);
+    showClock();
+  </script>  
+</body>
+</html>
